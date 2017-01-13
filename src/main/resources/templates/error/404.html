@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>404</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css"
+          th:href="@{/css/style.css}" />
+</head>
+<body>
+
+<div class="page">
+    <div class="title">     Error 404: Not Found </div>
+     <div class="subtitle">     你要的东西不在这里, 到别处看看吧。 </div>
+
+    Failed URL: <td th:text="${url}">url</td>
+
+    <tr th:each="ex:${exception}">
+        <td th:text="${ex}">ex</td>
+    </tr>
+</div>
+
+</body>
+</html>
