@@ -31,7 +31,7 @@ public class MailTest {
         message.setSubject("主题：简单邮件");
         message.setText("测试邮件内容");
 
-        mailSender.send(message);
+//        mailSender.send(message);
     }
 
     @Test
@@ -48,6 +48,6 @@ public class MailTest {
         FileSystemResource file = new FileSystemResource(new File("weixin.jpg"));
         helper.addInline("weixin", file);
 
-        mailSender.send(mimeMessage);
+//        mailSender.send(mimeMessage);
     }
 }
