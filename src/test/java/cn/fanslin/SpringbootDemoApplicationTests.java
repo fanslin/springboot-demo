@@ -20,6 +20,8 @@ public class SpringbootDemoApplicationTests {
 
 	@Autowired
 	private StringRedisTemplate stringRedisTemplate;
+	@Autowired
+	private RedisTemplate redisTemp;
 
 	@Autowired
 	private RedisTemplate<String, User> redisTemplate;
